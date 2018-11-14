@@ -123,7 +123,7 @@ It is worthwhile to step back and think about the different ways the computer ha
 <a name="documentation"></a>
 <div class="sideNote">
   <h3>Looking Up Documentation</h3>
-  <p>This book was never intended to be a comprehensive reference for the SQL language. For that, you will have to look up other online resources. This in a skill in itself, and one that is worth mastering because you will be looking up documentation years after you've achieved familiarity with the language.</p>
+  <p>This book was never intended to be a comprehensive reference for the SQL language. For that, you will have to look up other online resources. This is a skill in itself, and one that is worth mastering because you will be looking up documentation years after you've achieved familiarity with the language.</p>
   <p>The good news is that with the mental models you will learn in this book, lookups should be quick and painless because you will just be checking details like whether the function is called <code>AVERAGE</code> or <code>AVG</code> instead of figuring out what approach to take.</p>
   <p>For lookups, I often use <a href="https://www.w3schools.com/sql/default.asp">W3 Schools</a>, Stack Overflow and the <a href="http://sqlite.org">official SQLite documentation</a>.</p>
 </div>
@@ -160,7 +160,7 @@ In practice, databases try to return something sensible even though you pass in 
   <h3>SQL Dialects and Databases</h3>
   <p>Although we've called this a book about SQL, if we want to be pedantic it really is a book about <i>SQLite</i>. This is because SQL is an imaginary concept, a platonic ideal. In reality, there are only dialects that try to conform to the SQL specifications.</p>
   <p>SQL is also under-specified, meaning that some functionality is not specified by the standards. For instance, the standards don't say whether the string length-finding function should be called <code>LEN</code> (SQL Server) or <code>LENGTH</code> (SQLite); or how identifiers like table or column names should be quoted (<code>`</code> in MySQL, <code>"</code> in SQLite).</p>
-  <p>To make matters worse, even a single query in a single dialect can be processed differently because the underlying databases can have different architectures. For instance, the PostgreSQL dialect can be used on databases distributed over many different physical machines, and ones consisting a single file. It means that the mental models we develop here are just a crutch. They may not reflect exactly what the database is doing.</p>
+  <p>To make matters worse, even a single query in a single dialect can be processed differently because the underlying databases can have different architectures. For instance, the PostgreSQL dialect can be used on databases distributed over many different physical machines, and ones consisting of a single file. It means that the mental models we develop here are just a crutch. They may not reflect exactly what the database is doing.</p>
   <p>We've picked SQLite, which is both a dialect and an implementation, because it's one of the most common databases. We've also tried to focus on the core functionality and mental model of SQL rather than distinctive parts of SQLite. With a robust mental model in place, it's easy to switch between SQL dialects and databases.
   </p>
 </div>
